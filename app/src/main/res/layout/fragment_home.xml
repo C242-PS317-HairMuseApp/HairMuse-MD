@@ -96,10 +96,12 @@
                 android:text="@string/seeall" />
         </LinearLayout>
 
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewSalon"
             android:layout_width="match_parent"
             android:layout_height="200dp" />
 
     </LinearLayout>
+
 </ScrollView>
