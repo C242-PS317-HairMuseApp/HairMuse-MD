@@ -3,15 +3,36 @@
     <string name="title_home">Home</string>
     <string name="title_camera">Camera</string>
     <string name="title_profil">Profil</string>
-<!--    home -->
+    <!--    home -->
     <string name="content_Hair">Hair Recomend</string>
     <string name="content_Salon">Salon Recomend</string>
     <string name="seeall">See All</string>
     <string name="Dess_tum">15 Gaya Rambut Ter Baru</string>
     <string name="event_image">Event Image</string>
+    <string name="hairmuse_logo">HairMuse Logo</string>
 
-<!--    camera-->
+    <!--    camera-->
     <string name="gallery">Galeri</string>
     <string name="analyze">Camera</string>
     <string name="result">Hasil Analisis</string>
+
+    <!-- register-->
+    <string name="password">Password</string>
+    <string name="signin">Sign In</string>
+    <string name="email_invalid">Invalid Email Address</string>
+    <string name="pass_invalid">Minimum 8 Character Password</string>
+    <string name="required">Harus diisi dulu</string>
+    <string name="dont_have_account_yet">Belum memiliki akun?</string>
+    <string name="signup_btn_acc">Sign Up</string>
+    <string name="title_page">Mari buat akun terlebih dahulu dengan melengkapi data berikut</string>
+    <string name="confirm_password">Konfirmasi Password</string>
+
+    <!-- profile-->
+    <string name="name">Name</string>
+    <string name="gender">Jenis Kelamin</string>
+    <string name="email">Alamat Email</string>
+    <string name="adress">Alamat</string>
+    <string name="change_password">Ubah Password</string>
+    <string name="edit_profile">Edit Profile</string>
+
 </resources>
