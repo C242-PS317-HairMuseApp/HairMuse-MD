@@ -53,10 +53,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/analyze" />
-        <Button
-            android:id="@+id/galleryButton1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/gallery" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
