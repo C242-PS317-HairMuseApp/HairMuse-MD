@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/container"
@@ -30,6 +29,44 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:navGraph="@navigation/mobile_navigation" />
+    <!--android:visibility="gone" -->
+    <!-- FloatingActionButton pertama -->
+
+    <!-- FloatingActionButton kedua -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_place_holder"
+        app:layout_constraintBottom_toTopOf="@id/fab_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/gallery"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:visibility="gone"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.MaterialComponents.Rectangle"
+        app:iconGravity="start"
+        app:iconPadding="8dp"
+        app:iconSize="40dp" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/baseline_photo_camera_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        android:text="@string/camera"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:visibility="gone"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.MaterialComponents.Rectangle"
+        app:iconGravity="start"
+        app:iconPadding="8dp"
+        app:iconSize="40dp" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

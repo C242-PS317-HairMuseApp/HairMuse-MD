@@ -1,7 +1,9 @@
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/scrollViewHome">
+        android:id="@+id/scrollViewHome"
+
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,7 +43,7 @@
                 android:layout_gravity="center"
                 android:visibility="gone" />
 
-            <!-- Upcoming Events -->
+            <!-- Hair recomend -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -63,7 +65,8 @@
                     android:id="@+id/btnSlhair"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/seeall" />
+                    android:text="@string/seeall"
+                    />
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
@@ -72,7 +75,7 @@
                 android:layout_height="200dp"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Finished Events -->
+            <!-- salon recomend -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -93,7 +96,8 @@
                     android:id="@+id/btnSlsalon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/seeall" />
+                    android:text="@string/seeall"
+                    />
             </LinearLayout>
 
 

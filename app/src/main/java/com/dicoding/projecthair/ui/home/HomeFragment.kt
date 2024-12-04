@@ -30,10 +30,17 @@ class HomeFragment : Fragment() {
             val intent = Intent(requireContext(), ContentHairActivity::class.java)
             startActivity(intent)
         }
+        binding.btnSlsalon.setOnClickListener {
+            val intent = Intent(requireContext(), ContentHairActivity::class.java)
+            startActivity(intent)
+        }
 
         // Tambahkan event klik untuk btnSlsalon (opsional)
         binding.btnSlsalon.setOnClickListener {
             // Tambahkan intent atau aksi lain untuk tombol ini
+        }
+        binding.btnSlsalon.setOnClickListener{
+
         }
     }
 

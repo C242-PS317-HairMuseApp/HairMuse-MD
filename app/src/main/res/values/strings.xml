@@ -4,8 +4,8 @@
     <string name="title_camera">Camera</string>
     <string name="title_profil">Profil</string>
     <!--    home -->
-    <string name="content_Hair">Hair Recomend</string>
-    <string name="content_Salon">Salon Recomend</string>
+    <string name="content_Hair">HAIR RECOMMENDATIONS</string>
+    <string name="content_Salon">SALON RECOMMENDATIONS</string>
     <string name="seeall">See All</string>
     <string name="Dess_tum">15 Gaya Rambut Ter Baru</string>
     <string name="event_image">Event Image</string>
@@ -13,7 +13,7 @@
 
     <!--    camera-->
     <string name="gallery">Galeri</string>
-    <string name="analyze">Camera</string>
+    <string name="camera">Camera</string>
     <string name="result">Hasil Analisis</string>
 
     <!-- register-->
