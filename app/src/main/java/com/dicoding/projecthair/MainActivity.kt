@@ -12,10 +12,13 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.dicoding.projecthair.databinding.ActivityMainBinding
+import com.dicoding.projecthair.ui.home.viewpager.ImageSliderAdapter
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+
+
     private var isFabVisible = false // Status FAB
 
     // Launcher untuk memilih gambar dari galeri
@@ -52,14 +55,13 @@ class MainActivity : AppCompatActivity() {
         val fabCamera = binding.fabCamera
         val fabGallery = binding.fabGallery
 
-        val navController = findNavController(R.id.nav_host_fragment_activity_main)
+
         val appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.navigation_home, R.id.navigation_camera, R.id.navigation_profil
             )
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+
 
         // Set initial FAB visibility
         fabCamera.visibility = View.GONE

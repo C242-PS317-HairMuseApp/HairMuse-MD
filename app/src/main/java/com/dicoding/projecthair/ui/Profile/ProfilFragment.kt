@@ -8,7 +8,6 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.dicoding.projecthair.R
-import com.dicoding.projecthair.databinding.FragmentCameraBinding
 import com.dicoding.projecthair.databinding.FragmentProfilBinding
 
 

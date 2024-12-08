@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/content_Hair"
+            android:text="@string/content_Hairmen"
             android:textSize="18sp"
             android:textStyle="bold"
             android:padding="16dp" />

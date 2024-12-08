@@ -4,7 +4,8 @@
     <string name="title_camera">Camera</string>
     <string name="title_profil">Profil</string>
     <!--    home -->
-    <string name="content_Hair">HAIR RECOMMENDATIONS</string>
+    <string name="content_Hairmen">MEN HAIR RECOMENDATIONS</string>
+    <string name="content_Hairwmn">WOMEN HAIR RECOMENDATIONS</string>
     <string name="content_Salon">SALON RECOMMENDATIONS</string>
     <string name="seeall">See All</string>
     <string name="Dess_tum">15 Gaya Rambut Ter Baru</string>
