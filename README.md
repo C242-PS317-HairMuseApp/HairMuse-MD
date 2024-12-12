@@ -70,6 +70,6 @@ Hair Muse is a mobile application designed to assist users in identifying their 
 
 ## Screenshots
 ### 1. Splash Screen
-  <img src="https://github.com/HairMuseApp/HairMuse-MD/blob/master/Hair%20Muse%20.png" alt="HairMuse Logo" width="120" height="480">
+  <img src="https://github.com/HairMuseApp/HairMuse-MD/blob/master/Hair%20Muse%20.png" alt="HairMuse Logo" width="220" height="480">
 
 ---
