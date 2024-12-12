@@ -64,11 +64,12 @@
                 android:id="@+id/btnSlhairmen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                app:cornerRadius="20dp"
                 android:text="@string/seeall" />
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewHairmen"
+            android:id="@+id/recyclerViewHairmele"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginBottom="16dp" />
@@ -93,11 +94,12 @@
                 android:id="@+id/btnSlhair"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                app:cornerRadius="20dp"
                 android:text="@string/seeall" />
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewHairwmn"
+            android:id="@+id/recyclerViewHairfemale"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginBottom="16dp" />
@@ -121,6 +123,7 @@
                 android:id="@+id/btnSlsalon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                app:cornerRadius="20dp"
                 android:text="@string/seeall" />
         </LinearLayout>
 

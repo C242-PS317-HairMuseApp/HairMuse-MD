@@ -1,5 +1,6 @@
 package com.dicoding.projecthair
 
+import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
@@ -12,6 +13,9 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.dicoding.projecthair.databinding.ActivityMainBinding
+
+import com.dicoding.projecthair.ui.Upload_image.ResultActivity
+import com.dicoding.projecthair.ui.Upload_image.UploadImage
 import com.dicoding.projecthair.ui.home.viewpager.ImageSliderAdapter
 
 class MainActivity : AppCompatActivity() {
@@ -97,7 +101,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         fabGallery.setOnClickListener {
-            openGallery()
+            val intent = Intent(this, UploadImage::class.java)
+            startActivity(intent)
         }
     }
 

@@ -17,7 +17,7 @@
             android:layout_width="247.4dp"
             android:layout_height="251.5dp"
             android:contentDescription="@string/hairmuse_logo"
-
+            android:background="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -92,6 +92,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="80dp"
             android:backgroundTint="@color/black"
+            android:background="@color/white"
             android:text="@string/signin"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"

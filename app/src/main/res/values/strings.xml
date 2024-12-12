@@ -5,6 +5,7 @@
     <string name="title_profil">Profil</string>
     <!--    home -->
     <string name="content_Hairmen">MEN HAIR RECOMENDATIONS</string>
+    <string name="content_Hair">HAIR RECOMENDATIONS</string>
     <string name="content_Hairwmn">WOMEN HAIR RECOMENDATIONS</string>
     <string name="content_Salon">SALON RECOMMENDATIONS</string>
     <string name="seeall">See All</string>
@@ -16,6 +17,8 @@
     <string name="gallery">Galeri</string>
     <string name="camera">Camera</string>
     <string name="result">Hasil Analisis</string>
+    <string name="analyze">Analyze</string>
+    <string name="Upload">Upload</string>
 
     <!-- register-->
     <string name="password">Password</string>
@@ -35,5 +38,40 @@
     <string name="adress">Alamat</string>
     <string name="change_password">Ubah Password</string>
     <string name="edit_profile">Edit Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <integer-array name="male_photo">
+        <item>@drawable/square_male</item>
+        <item>@drawable/round_male</item>
+        <item>@drawable/oval_male</item>
+        <item>@drawable/oblong_male</item>
+        <item>@drawable/heart_male</item>
+    </integer-array>
+    <string-array name="text_male">
+        <item>Square</item>
+        <item>Round</item>
+        <item>Oval</item>
+        <item>Oblong</item>
+        <item>Heart</item>
+    </string-array>
+
+
+    <integer-array name="female_photo">
+        <item>@drawable/square_female</item>
+        <item>@drawable/round_female</item>
+        <item>@drawable/oval_female</item>
+        <item>@drawable/oblong_female</item>
+        <item>@drawable/heart_female</item>
+    </integer-array>
+    <string-array name="txt_female">
+        <item>Square</item>
+        <item>Round</item>
+        <item>Oval</item>
+        <item>Oblong</item>
+        <item>Heart</item>
+    </string-array>
+
 
 </resources>

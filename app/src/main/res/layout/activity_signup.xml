@@ -15,6 +15,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/white"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <TextView
@@ -25,7 +26,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:text="@string/title_page"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
         android:alpha="0"
@@ -43,6 +44,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginTop="24dp"
+        app:boxBackgroundColor="@color/white"
         android:alpha="0"
         tools:alpha="100"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,6 +70,7 @@
         android:layout_marginTop="24dp"
         android:alpha="0"
         tools:alpha="100"
+        app:boxBackgroundColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameEditTextLayout">
@@ -89,6 +92,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginTop="24dp"
+        app:boxBackgroundColor="@color/white"
         android:alpha="0"
         tools:alpha="100"
         app:endIconMode="password_toggle"
@@ -119,6 +123,7 @@
         android:backgroundTint="@android:color/black"
         android:text="@string/signup_btn_acc"
         app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/white"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordEditTextLayout"
