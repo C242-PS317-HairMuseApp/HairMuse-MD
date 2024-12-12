@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/270ac60f-83e6-4559-a3e0-e97a492e8328)# Hair Muse - Mobile Application
+# Hair Muse - Mobile Application
 
 Hair Muse is a mobile application designed to assist users in identifying their face shape and providing tailored hairstyle recommendations. The app also offers additional features such as finding nearby salons and exploring articles about hair care.
 
@@ -70,6 +70,6 @@ Hair Muse is a mobile application designed to assist users in identifying their 
 
 ## Screenshots
 ### 1. Splash Screen
-![Splash Screen]([link_to_screenshot1](https://github.com/HairMuseApp/HairMuse-MD/blob/master/Hair%20Muse%20.png))
+  <img src="https://github.com/HairMuseApp/HairMuse-MD/blob/master/Hair%20Muse%20.png" alt="HairMuse Logo" width="120" height="480">
 
 ---
