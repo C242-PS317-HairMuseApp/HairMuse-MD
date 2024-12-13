@@ -68,9 +68,9 @@ Hair Muse is a mobile application designed to assist users in identifying their 
 
 ## Screenshots
 <div style="display: flex; justify-content: space-around;">
-   <img src="https://github.com/HairMuseApp/.github/blob/main/assets/splash%20screen.png" alt="Splash Screen" width="220" height="450">
-   <img src="https://github.com/HairMuseApp/.github/blob/main/assets/Home%20Screen.png" alt="Home Screen" width="190" height="450">
-   <img src="https://github.com/HairMuseApp/.github/blob/main/assets/UploadButton.png" alt="Upload Button" width="190" height="450">
+   <img src="https://github.com/HairMuseApp/.github/blob/main/assets/splash%20screen.png" alt="Splash Screen" width="210" height="450">
+   <img src="https://github.com/HairMuseApp/.github/blob/main/assets/Home%20Screen.png" alt="Home Screen" width="185" height="450">
+   <img src="https://github.com/HairMuseApp/.github/blob/main/assets/UploadButton.png" alt="Upload Button" width="185" height="450">
    <img src="https://github.com/HairMuseApp/.github/blob/main/assets/Prediction%20Screen.png" alt="Prediction Screen" width="190" height="450">
-   <img src="https://github.com/HairMuseApp/.github/blob/main/assets/OutputScreen.png" alt="Output Screen" width="190" height="450">
+   <img src="https://github.com/HairMuseApp/.github/blob/main/assets/OutputScreen.png" alt="Output Screen" width="185" height="450">
 </div>
