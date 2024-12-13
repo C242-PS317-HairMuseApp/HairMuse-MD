@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -15,10 +17,10 @@
         android:theme="@style/Theme.Projecthair"
         tools:targetApi="31">
         <activity
-            android:name=".ui.home.HairstyleRecommendationActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.home.viewpager.RecommendedHairstylesViewModel"
+            android:name=".ui.home.HairstyleRecommendationActivity"
             android:exported="false" />
         <activity
             android:name=".ui.Upload_image.UploadImage"
@@ -42,9 +44,9 @@
             android:name=".ui.auth.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.splash.SplashActivity"
             android:exported="true"
-            android:label="@string/app_name">
+            android:label= "@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

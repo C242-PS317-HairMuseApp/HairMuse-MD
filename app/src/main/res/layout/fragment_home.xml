@@ -71,8 +71,9 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewHairmele"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginBottom="16dp" />
+            android:layout_height="130dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp" />
 
         <!-- Hair recommend women's -->
         <LinearLayout
@@ -101,8 +102,9 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewHairfemale"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginBottom="16dp" />
+            android:layout_height="130dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"/>
 
         <!-- Salon recommend -->
         <LinearLayout
@@ -130,7 +132,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewSalon"
             android:layout_width="match_parent"
-            android:layout_height="200dp" />
+            android:layout_height="130dp" />
 
     </LinearLayout>
 </ScrollView>

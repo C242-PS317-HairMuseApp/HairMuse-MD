@@ -175,21 +175,7 @@ class HomeFragment : Fragment() {
         }
     }
 
-    private fun setupSalonRecyclerView() {
-        val itemListSalon = mutableListOf<Item>()
-        itemListSalon.add(Item(R.drawable.oval_female, "Salon 1"))
-        itemListSalon.add(Item(R.drawable.square_female, "Salon 2"))
 
-        adapterSalon = ItemAdapter(itemListSalon) { selectedItem ->
-            Toast.makeText(requireContext(), "Selected salon: ${selectedItem.text}", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(requireContext(), NearestSalonActivity::class.java))
-        }
-
-        binding.recyclerViewSalon.apply {
-            adapter = adapterSalon
-            layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-        }
-    }
 
     private fun setupButtonListeners() {
         binding.btnSlhairmen.setOnClickListener {
@@ -205,6 +191,22 @@ class HomeFragment : Fragment() {
         binding.btnSlsalon.setOnClickListener {
             Toast.makeText(requireContext(), "See All Salon", Toast.LENGTH_SHORT).show()
             startActivity(Intent(requireContext(), NearestSalonActivity::class.java))
+        }
+    }
+
+    private fun setupSalonRecyclerView() {
+        val itemListSalon = mutableListOf<Item>()
+        itemListSalon.add(Item(R.drawable.salon, "Salon 1"))
+        itemListSalon.add(Item(R.drawable.salon_b, "Salon 2"))
+
+        adapterSalon = ItemAdapter(itemListSalon) { selectedItem ->
+            Toast.makeText(requireContext(), "Selected salon: ${selectedItem.text}", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(requireContext(), NearestSalonActivity::class.java))
+        }
+
+        binding.recyclerViewSalon.apply {
+            adapter = adapterSalon
+            layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         }
     }
 

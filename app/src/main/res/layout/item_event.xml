@@ -17,6 +17,7 @@
         android:layout_width="190dp"
         android:layout_height="116dp"
         android:padding="8dp"
+        android:background="@color/white"
         >
 
         <!-- ImageView di tengah -->
