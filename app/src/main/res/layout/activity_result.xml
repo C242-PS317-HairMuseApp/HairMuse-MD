@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/upload_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_upload" />
+
+    <Button
+        android:id="@+id/predict_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upload_button"
+        android:layout_marginTop="16dp"
+        android:enabled="false"
+        android:text="Predict" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/predict_button"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/result_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_view"
+        android:layout_marginTop="16dp"
+        android:text="Result"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/description_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_text_view"
+        android:layout_marginTop="8dp"
+        android:text="Description" />
+
+    <TextView
+        android:id="@+id/tips_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description_text_view"
+        android:layout_marginTop="8dp"
+        android:text="Tips" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tips_text_view"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/hairstyle_image_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp" />
+
+        <ImageView
+            android:id="@+id/hairstyle_image_2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp" />
+
+        <ImageView
+            android:id="@+id/hairstyle_image_3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -25,17 +25,6 @@ class MainActivity : AppCompatActivity() {
 
     private var isFabVisible = false // Status FAB
 
-    // Launcher untuk memilih gambar dari galeri
-    private val launcherGallery = registerForActivityResult(
-        ActivityResultContracts.PickVisualMedia()
-    ) { uri: Uri? ->
-        if (uri != null) {
-            // Tampilkan URI gambar di log atau lakukan tindakan lain
-            showToast("Gambar dari galeri berhasil dipilih: $uri")
-        } else {
-            showToast("Tidak ada gambar yang dipilih")
-        }
-    }
 
     // Launcher untuk mengambil gambar menggunakan kamera
     private val launcherCamera = registerForActivityResult(
@@ -111,11 +100,7 @@ class MainActivity : AppCompatActivity() {
         launcherCamera.launch(null)
     }
 
-    private fun openGallery() {
-        // Memulai launcher untuk memilih gambar dari galeri
-        val request = PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly)
-        launcherGallery.launch(request)
-    }
+
 
     private fun showToast(message: String) {
         // Menampilkan pesan toast

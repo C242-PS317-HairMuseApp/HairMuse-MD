@@ -1,29 +1,47 @@
-package com.dicoding.projecthair.ui.Profile
+package com.dicoding.projecthair.ui.Profile // Ganti dengan nama package Anda
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import com.dicoding.projecthair.R
 import com.dicoding.projecthair.databinding.FragmentProfilBinding
-
 
 class ProfilFragment : Fragment() {
 
+    // Menyimpan binding agar bisa mengakses view di dalam layout
     private var _binding: FragmentProfilBinding? = null
+    private val binding get() = _binding!!
 
-    class ProfilFragment : Fragment() {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Menghubungkan layout XML dengan ViewBinding
+        _binding = FragmentProfilBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
-        override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
-        ): View? {
-            // Inflate the layout for this fragment, ganti R.layout.fragment_home dengan layout yang sesuai
-            return inflater.inflate(R.layout.fragment_profil, container, false)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Akses elemen UI dari binding dan lakukan logika atau pengaturan
+        // Contoh mengisi nama profil
+        binding.nameEditText.setText("John Doe")  // Mengubah text pada EditText nama
+
+        // Jika diperlukan, set listener atau event handler lainnya
+        binding.btnEditProfile.setOnClickListener {
+            // Logika untuk tombol edit profil
+        }
+
+        binding.btnEditPassword.setOnClickListener {
+            // Logika untuk tombol ganti password
         }
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        // Set binding ke null untuk mencegah memory leak
+        _binding = null
+    }
 }
