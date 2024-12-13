@@ -1,22 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- BottomNavigationView -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="0dp"
         android:layout_marginEnd="0dp"
-        android:background="?android:attr/windowBackground"
+        android:background="@color/gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/bottom_nav_menu" />
 
+    <!-- Fragment Host -->
     <fragment
         android:id="@+id/nav_host_fragment_activity_main"
         android:name="androidx.navigation.fragment.NavHostFragment"
@@ -31,5 +32,48 @@
         app:layout_constraintVertical_bias="1.0"
         app:navGraph="@navigation/mobile_navigation" />
 
+    <!-- FAB Gallery -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_upload"
+        app:layout_constraintBottom_toTopOf="@id/fab_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/Upload"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:visibility="gone"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.MaterialComponents.Rectangle"
+        app:iconGravity="start"
+        app:iconPadding="8dp"
+        app:iconSize="40dp"
+        android:backgroundTint="@android:color/white"
+    android:textColor="@android:color/black"
+    app:iconTint="@android:color/black"
+    />
+
+    <!-- FAB Camera -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/baseline_photo_camera_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        android:text="@string/camera"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:visibility="gone"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.MaterialComponents.Rectangle"
+        app:iconGravity="start"
+        app:iconPadding="8dp"
+        app:iconSize="40dp"
+        android:backgroundTint="@android:color/white"
+    android:textColor="@android:color/black"
+    app:iconTint="@android:color/black"
+    />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

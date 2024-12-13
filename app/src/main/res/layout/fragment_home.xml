@@ -1,38 +1,41 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/scrollViewHome">
 
+    <!-- LinearLayout sebagai child langsung dari ScrollView -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="250dp"
+            android:layout_marginTop="8dp">
 
-            <ImageView
+            <!-- ViewPager2 for Image Slider -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:scaleType="fitXY"
-                android:src="@drawable/foto_panel" />
+                android:layout_height="250dp"
+                android:layout_marginBottom="16dp" />
 
-            <TextView
-                android:layout_width="match_parent"
+            <!-- Indicator Container at the bottom center of the image -->
+            <LinearLayout
+                android:id="@+id/indicatorContainer"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:layout_gravity="bottom"
-                android:layout_marginStart="16dp"
-                android:layout_marginBottom="16dp"
-                android:background="#4D000000"
-                android:drawablePadding="4dp"
-                android:gravity="center_vertical"
-                android:padding="8dp"
-                android:text="@string/Dess_tum" />
+                android:gravity="center"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="16dp" />
 
         </FrameLayout>
+
+
         <!-- ProgressBar -->
         <ProgressBar
             android:id="@+id/progressBarCombined"
@@ -41,7 +44,7 @@
             android:layout_gravity="center"
             android:visibility="gone" />
 
-        <!-- Upcoming Events -->
+        <!-- Hair recommend men's -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,29 +53,60 @@
             android:paddingEnd="16dp"
             android:paddingTop="10dp"
             android:gravity="center_vertical">
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/content_Hair"
+                android:text="@string/content_Hairmen"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:layout_weight="1" />
-
             <Button
-                android:id="@+id/btnSlhair"
+                android:id="@+id/btnSlhairmen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                app:cornerRadius="20dp"
                 android:text="@string/seeall" />
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewHair"
+            android:id="@+id/recyclerViewHairmele"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginBottom="16dp" />
+            android:layout_height="130dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp" />
 
-        <!-- Finished Events -->
+        <!-- Hair recommend women's -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/content_Hairwmn"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/btnSlhair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cornerRadius="20dp"
+                android:text="@string/seeall" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewHairfemale"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Salon recommend -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -80,7 +114,6 @@
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:gravity="center_vertical">
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -88,18 +121,18 @@
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:layout_weight="1" />
-
             <Button
                 android:id="@+id/btnSlsalon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                app:cornerRadius="20dp"
                 android:text="@string/seeall" />
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewSalon"
             android:layout_width="match_parent"
-            android:layout_height="200dp" />
+            android:layout_height="130dp" />
 
     </LinearLayout>
 </ScrollView>
