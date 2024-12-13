@@ -74,3 +74,9 @@ Hair Muse is a mobile application designed to assist users in identifying their 
    <img src="https://github.com/HairMuseApp/.github/blob/main/assets/Prediction%20Screen.png" alt="Prediction Screen" width="190" height="450">
    <img src="https://github.com/HairMuseApp/.github/blob/main/assets/OutputScreen.png" alt="Output Screen" width="190" height="450">
 </div>
+<br>
+<p align="center">
+   Download Now!
+   <br>
+   <a href="https://github.com/C242-PS317-HairMuseApp/HairMuse-MD/releases/download/v1.0/app-debug.apk"><img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" /></a>
+</p>
